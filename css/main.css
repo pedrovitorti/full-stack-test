@@ -1,0 +1,55 @@
+html, body {
+	height: 100%;
+	margin: 0px
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Cookie/Cookie-Regular.ttf");
+}
+
+
+header {
+	background-color: #acd0b6;
+	margin: 0px;
+	padding: 0px;
+	height: 80px;
+	width: 100%;
+}
+
+header #logotipo {
+	padding: 21px;
+}
+
+div.container1 {
+	text-align: center;
+	height: 80px;	
+}
+
+label {
+	font-family: "OpenSans";
+	font-size: 71px;
+	color: #E2EBCC;
+}
+
+section {
+  	height: 100%;
+  	width: 100%;
+  	display: flex; /* coloca as divs lado a lado */
+}
+
+.formulario {
+	background-image: url("../img/04-BG.png");
+	width: 50%;
+	height: 100%;
+  	box-sizing: border-box;	
+}
+
+.imagem {
+	width: 50%;
+  	height: 100%;
+  	box-sizing: border-box;
+  	background: url("../img/05-IMAGE.png");
+}	
+
+
