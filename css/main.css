@@ -26,30 +26,120 @@ div.container1 {
 	height: 80px;	
 }
 
-label {
+h4 {
 	font-family: "OpenSans";
 	font-size: 71px;
 	color: #E2EBCC;
+	line-height: 70%;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 80px;
+	margin-bottom: 40px;
 }
 
 section {
   	height: 100%;
   	width: 100%;
-  	display: flex; /* coloca as divs lado a lado */
+  	display: flex; /* coloca as divs (formulario/imagem) lado a lado */
+  	background-color: #284D51;
+}
+section .principal {
+	position: relative;
+  	width: 100%;
+ 
+}
+
+.formulario, .imagem {
+  	position: absolute;
+  	height: 100%;
+  	width: 65%;
 }
 
 .formulario {
+	padding-top: 0px;
+	padding-left: 150px;
+	padding-right: 205px;
 	background-image: url("../img/04-BG.png");
-	width: 50%;
+	width: 60%;
 	height: 100%;
   	box-sizing: border-box;	
+  	-webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+  	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
 }
 
 .imagem {
-	width: 50%;
+	width: 45%;
   	height: 100%;
+  	right: 0;
   	box-sizing: border-box;
   	background: url("../img/05-IMAGE.png");
+  	-webkit-clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+  	clip-path: polygon(13% 0, 100% 0%, 100% 100%, 0% 100%); 
 }	
+
+/* css formulário */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0;
+}
+
+input, textarea, button {
+   	font-family: 'Open_Sans';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 18px;
+}
+
+.campo {
+    margin-bottom: 25px;
+   
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo textarea {
+	width: 420px;
+    padding: 10px;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+    border-radius: 5px;
+}
+
+
+.campo input:focus, .campo textarea:focus {
+    background: white;
+}
+
+.botao {
+	width: 420px;
+    font-size: 18px;
+    background: #83B1A8;
+    color: #FFF;
+    border-bottom: 5px solid #5B9A8C;
+    padding: 0.2em 0.6em;
+   	border-top: none;
+   	border-left: none;
+   	border-right: none;
+   	border-radius: 5px;
+   	padding: 10px;
+}
+
+.botao:hover {
+    background: #83B1A0;
+    box-shadow: inset 0px 0px 0px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select, label.checkbox {
+    cursor: pointer;
+}
+
+
+
 
 
