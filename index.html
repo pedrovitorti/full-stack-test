@@ -18,13 +18,13 @@
 				<form>
 					<fieldset>
 						<div class="campo">
-							<input type="text" placeholder="Nome">
+							<input id="nome" type="text" placeholder="Nome" required>
 						</div>
 						<div class="campo">
-							<input type="email" placeholder="Email">
+							<input id="email" type="email" placeholder="Email" required>
 						</div>
 						<div class="campo">
-							<textarea rows="4" cols="50" placeholder="Mensagem"></textarea>
+							<textarea id="msg" rows="4" cols="50" placeholder="Mensagem" required></textarea>
 						</div>
 						<button type="submit" class="botao submit">Enviar</button>
 					</fieldset>
@@ -36,5 +36,6 @@
 			</div>
 		
 		</section>
+		<script src='./js/main.js'></script>
 	</body>
 </html>

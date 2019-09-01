@@ -8,6 +8,11 @@ html, body {
 	src: url("../fonts/Cookie/Cookie-Regular.ttf");
 }
 
+@font-face {
+  font-family: 'Open_Sans';
+  src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+  font-size: 18px;
+}
 
 header {
 	background-color: #acd0b6;
@@ -38,108 +43,177 @@ h4 {
 }
 
 section {
-  	height: 100%;
-  	width: 100%;
-  	display: flex; /* coloca as divs (formulario/imagem) lado a lado */
-  	background-color: #284D51;
+  height: 100%;
+  width: 100%;
+  display: flex; /* coloca as divs (formulario/imagem) lado a lado */
+  background-color: #284D51;
 }
 section .principal {
-	position: relative;
   	width: 100%;
- 
 }
 
 .formulario, .imagem {
-  	position: absolute;
-  	height: 100%;
-  	width: 65%;
+  position: absolute;
+  height: 100%;
+  width: 65%;
 }
 
 .formulario {
-	padding-top: 0px;
-	padding-left: 150px;
-	padding-right: 205px;
-	background-image: url("../img/04-BG.png");
-	width: 60%;
-	height: 100%;
-  	box-sizing: border-box;	
-  	-webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
-  	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+  padding-top: 0px;
+  padding-left: 150px;
+  padding-right: 205px;
+  background-image: url("../img/04-BG.png");
+  width: 60%;
+  height: 100%;
+  box-sizing: border-box;	
+  -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
 }
 
 .imagem {
-	width: 45%;
-  	height: 100%;
-  	right: 0;
-  	box-sizing: border-box;
-  	background: url("../img/05-IMAGE.png");
-  	-webkit-clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
-  	clip-path: polygon(13% 0, 100% 0%, 100% 100%, 0% 100%); 
+  width: 45%;
+  height: 100%;
+  right: 0;
+  box-sizing: border-box;
+  background: url("../img/05-IMAGE.png");
+  -webkit-clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(13% 0, 100% 0%, 100% 100%, 0% 100%); 
 }	
 
 /* css formulário */
 
 * {
-    margin: 0;
-    padding: 0;
-}
-
-fieldset {
-    border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 input, textarea, button {
-   	font-family: 'Open_Sans';
-	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+  font-family: "Open_Sans";
 	font-size: 18px;
 }
 
 .campo {
-    margin-bottom: 25px;
-   
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .campo input[type="text"],
 .campo input[type="email"],
 .campo textarea {
 	width: 420px;
-    padding: 10px;
-    border: 1px solid #CCC;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display: block;
-    border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #CCC;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  border-radius: 5px;
 }
 
-
 .campo input:focus, .campo textarea:focus {
-    background: white;
+  background: white;
 }
 
 .botao {
 	width: 420px;
-    font-size: 18px;
-    background: #83B1A8;
-    color: #FFF;
-    border-bottom: 5px solid #5B9A8C;
-    padding: 0.2em 0.6em;
-   	border-top: none;
-   	border-left: none;
-   	border-right: none;
-   	border-radius: 5px;
-   	padding: 10px;
+  font-size: 18px;
+  background: #83B1A8;
+  color: #FFF;
+  border-bottom: 5px solid #5B9A8C;
+  padding: 0.2em 0.6em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .botao:hover {
-    background: #83B1A0;
-    box-shadow: inset 0px 0px 0px rgba(0,0,0,0.2);
-    text-shadow: none;
+  background: #83B1A0;
+  box-shadow: inset 0px 0px 0px rgba(0,0,0,0.2);
+  text-shadow: none;
 }
 
 .botao, select, label.checkbox {
-    cursor: pointer;
+  cursor: pointer;
 }
 
+fieldset {
+  text-align: center;
+  border: 0;
+}
 
+@media only screen and (max-device-width: 900px) {
+  .imagem{
+    visibility: hidden;
+  }
+  
+  .campo input[type="text"],
+  .campo input[type="email"],
+  .campo textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+
+  .formulario {
+    padding-top: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url("../img/04-BG.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .imagem{
+    visibility: hidden;
+    
+  }
+
+  .botao {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imagem{
+    visibility: hidden;
+  }
+
+  .campo input[type="text"],
+  .campo input[type="email"],
+  .campo textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+
+  .formulario {
+    padding-top: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url("../img/04-BG.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .imagem{
+    visibility: hidden;
+    
+  }
+
+  .botao {
+    width: 90%;
+  }
+
+}
 
 
 
