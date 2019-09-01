@@ -12,4 +12,5 @@
 
 
     file_put_contents('../json/dados.json', $values, FILE_APPEND);
+    
 ?>
