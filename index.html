@@ -15,18 +15,18 @@
 			<div class="formulario">
 				
 				<h4>Vem tomar um café com a gente</h4>
-				<form>
+				<form name="meuFormulario">
 					<fieldset>
 						<div class="campo">
-							<input id="nome" type="text" placeholder="Nome" required>
+							<input name="nome" id="nome" type="text" placeholder="Nome" required>
 						</div>
 						<div class="campo">
-							<input id="email" type="email" placeholder="Email" required>
+							<input name="email" id="email" type="email" placeholder="Email" required>
 						</div>
 						<div class="campo">
-							<textarea id="msg" rows="4" cols="50" placeholder="Mensagem" required></textarea>
+							<textarea name="msg" id="msg" rows="4" cols="50" placeholder="Mensagem" required></textarea>
 						</div>
-						<button type="submit" class="botao submit">Enviar</button>
+						<button onclick="return validar()" type="submit" class="botao submit">Enviar</button>
 					</fieldset>
 				</form>
 				
