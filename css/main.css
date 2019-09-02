@@ -81,6 +81,18 @@ section .principal {
 }	
 
 /* css formulário */
+h6 {
+  font-family: "Open_Sans";
+  font-size: 18px;
+  font-style: italic;
+  color: white;
+  line-height: 70%;
+  text-align: center;
+  text-indent: justify;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
 
 * {
   margin: 0;

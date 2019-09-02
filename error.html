@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+	</head>
+	<body>
+		<header>
+			<div class="container1">
+				<img id="logotipo" alt="logo" src="./img/06-LOGO.png">
+			</div>
+		</header>
+		<section class="principal">
+			
+			<div class="formulario">
+				
+				<h4>Vem tomar um café com a gente</h4>
+				<h6 style="color:red;">Aconteceu algum erro ao enviar. Envie novamente.</h6>
+				<form name="meuFormulario" action="./php/validar.php" method="post">
+					<fieldset>
+						<div class="campo">
+							<input autofocus name="nome" id="nome" type="text" placeholder="Nome" required>
+						</div>
+						<div class="campo">
+							<input name="email" id="email" type="email" placeholder="Email" required>
+						</div>
+						<div class="campo">
+							<textarea name="msg" id="msg" rows="4" cols="50" placeholder="Mensagem" required></textarea>
+						</div>
+						<button onclick="return validar()" type="submit" class="botao submit">Enviar</button>
+					</fieldset>
+				</form>
+				
+			</div>
+			
+			<div class="imagem">
+			</div>
+		
+		</section>
+		<script src='./js/main.js'></script>
+	</body>
+</html>
